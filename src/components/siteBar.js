@@ -5,6 +5,9 @@ export default () => (
   <div>
     <ul>
       <li>
+        <Link to="/events">events</Link>
+      </li>
+      <li>
         <Link to="/about">about</Link>
       </li>
       <li>
@@ -12,15 +15,6 @@ export default () => (
       </li>
       <li>
         <Link to="/tutorial/part-one">Part #1</Link>
-      </li>
-      <li>
-        <Link to="/tutorial/part-two">Part #2</Link>
-      </li>
-      <li>
-        <Link to="/tutorial/part-three">Part #3</Link>
-      </li>
-      <li>
-        <Link to="/tutorial/part-four">Part #4</Link>
       </li>
     </ul>
   </div>

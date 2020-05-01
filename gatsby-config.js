@@ -16,7 +16,9 @@ module.exports = {
         name: `images`,
         path: `${__dirname}/src`,
       }
-    },
+    },{ resolve: `@hfghfgdhfgdfhgdhfgd/gatsby-theme-minimal`, options: {
+      basePath: '/events'
+    }},
     {
       resolve: `gatsby-plugin-typography`,
       options: {
