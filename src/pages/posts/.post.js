@@ -1,20 +1,20 @@
 import React from "react"
-import Layout from "./layout"
-import {graphql} from 'gatsby'
+import {graphql, Link} from 'gatsby'
 
 export default ({ data }) => {
   const post = data.markdownRemark
   console.log(data);
   return (
-    <Layout>
+    <div>
       <h1>{post.frontmatter.title}</h1>
       <div dangerouslySetInnerHTML={{ __html: post.html }} />
-    </Layout>
+      <Link to="/posts"><button>back posts</button></Link>
+    </div>
   )
 }
 
 export const query = graphql`
-  query($slug: String!) {
+  query($slug: String) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
       html
       frontmatter {

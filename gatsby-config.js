@@ -14,9 +14,29 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/src`,
+        path: `${__dirname}/src/images`,
       }
-    },{ resolve: `@hfghfgdhfgdfhgdhfgd/gatsby-theme-minimal`, options: {
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `data`,
+        path: `${__dirname}/data`,
+      }
+    }, {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: 'posts',
+        path: `${__dirname}/src/pages/posts`
+      }
+    }, {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: 'news',
+        path: `${__dirname}/src/pages/news`
+      }
+    }
+    , { resolve: `@hfghfgdhfgdfhgdhfgd/gatsby-theme-minimal`, options: {
       basePath: '/events'
     }},
     {

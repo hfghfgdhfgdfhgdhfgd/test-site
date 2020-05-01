@@ -6,6 +6,7 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
   const { createNodeField } = actions
   if (node.internal.type === `MarkdownRemark`) {
     const slug = createFilePath({ node, getNode, basePath: `pages` })
+    console.log(slug, '<- this slug');
     createNodeField({
       node,
       name: `slug`,
@@ -35,7 +36,6 @@ exports.createPages = async ({ graphql, actions }) => {
     },
   }).then(data => data.json());
   // https://nifty-meitner-893620.netlify.app/api/extension/proxy
-  console.log(servers);
     createPage({
       path: '/servers',
       component: path.resolve('./src/components/servers.js'),
@@ -46,7 +46,7 @@ exports.createPages = async ({ graphql, actions }) => {
   result.data.allMarkdownRemark.edges.forEach(({ node }) => {
     createPage({
       path: node.fields.slug,
-      component: path.resolve(`./src/components/templates.js`),
+      component: path.resolve(`./src/pages/posts/.post.js`),
       context: {
         slug: node.fields.slug,
       },
