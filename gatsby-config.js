@@ -22,12 +22,6 @@ module.exports = {
         name: 'posts',
         path: `${__dirname}/src/pages/posts`
       }
-    }, {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: 'news',
-        path: `${__dirname}/src/pages/news`
-      }
     }
     , { resolve: `@hfghfgdhfgdfhgdhfgd/gatsby-theme-minimal`, options: {
       basePath: '/events'
