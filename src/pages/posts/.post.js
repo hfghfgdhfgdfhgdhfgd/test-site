@@ -8,7 +8,11 @@ export default ({ data }) => {
     <div>
       <h1>{post.frontmatter.title}</h1>
       <div dangerouslySetInnerHTML={{ __html: post.html }} />
-      <Link to="/posts"><button>back posts</button></Link>
+      <Link to="/posts">
+        <button> 
+          back
+        </button>
+      </Link>
     </div>
   )
 }
