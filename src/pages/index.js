@@ -5,13 +5,11 @@ export default () => (
   <Layout>
     start page
     contacts form
-    <form name="formWork" method="POST" data-netlify="true">
+    <form name="workForm1" method="POST" class="contact__form" netlify-honeypot="bot-field" data-netlify="true">
       <p>
         <label>Your Name: <input type="text" name="name" /></label>   
       </p>
-      <p>
-        <button type="submit">Send</button>
-      </p>
+      <input type="hidden" name="form-name" value="workForm1" />
     </form>
   </Layout>
 );
