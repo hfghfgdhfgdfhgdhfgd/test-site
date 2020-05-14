@@ -31,7 +31,9 @@
     "typography-theme-noriega": "^0.16.19"
   },
   "devDependencies": {
+    "gatsby-plugin-manifest": "^2.4.3",
     "gatsby-plugin-netlify-cms": "^4.3.0",
+    "gatsby-plugin-offline": "^3.2.2",
     "netlify-cms-app": "^2.12.11",
     "node-fetch": "^2.6.0",
     "prettier": "2.0.5"

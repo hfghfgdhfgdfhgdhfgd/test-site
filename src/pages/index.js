@@ -23,7 +23,7 @@ export default () => {
   return <Layout>
     start page
     contacts form
-    <form onSubmit={handleSubmit} name="workForm1" method="POST" class="contact__form" netlify-honeypot="bot-field" data-netlify="true">
+    <form onSubmit={handleSubmit} name="workForm1" method="POST" className="contact__form" netlify-honeypot="bot-field" data-netlify="true">
       <p>
         <label>Your Name: 
           <input type="text" name="name" value={name} onChange={(e) => setName(e.target.value)}/>
