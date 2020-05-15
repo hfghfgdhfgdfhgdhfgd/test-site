@@ -45,7 +45,7 @@ export default () => {
     <Layout>
       <div style={{height: 'auto', width: '100%'}}>
         {data.allFile.edges.map(({node}) => 
-          <Img fixed={node.childImageSharp.fluid} key={node.id}/>
+          <Img fixed={node.childImageSharp.fixed} key={node.id}/>
         )}
       </div>
     </Layout>
