@@ -1,6 +1,7 @@
 import React from 'react'
 import {Router} from "@reach/router"
 import {graphql, useStaticQuery, Link} from 'gatsby'
+import Img from 'gatsby-image'
 import Layout from '../components/layout'
 
 const Test1 = () => <div>
@@ -43,21 +44,9 @@ export default () => {
   return (
     <Layout>
       <div style={{height: 'auto', width: '100%'}}>
-        <Router basepath="/test">
-          <Test1 path="/1"/>
-          <Test2 path="/2"/>
-          <TestCustom path="/2/:userId"/>
-          <Test3 path="/" />
-        </Router>
-        <Link to="/test/1">
-          1
-        </Link>
-        <Link to="/test/2">
-          2
-        </Link>
-        <Link to="/test/2/345834759834">
-          3
-        </Link>
+        {data.allFile.edges.map(({node}) => 
+          <Img fluid={node.childImageSharp.fluid} key={node.id}/>
+        )}
       </div>
     </Layout>
   )
