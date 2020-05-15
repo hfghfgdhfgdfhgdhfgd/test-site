@@ -13,6 +13,9 @@ export default () => (
       <li>
         <Link to="/posts">posts</Link>
       </li>
+      <li>
+        <Link to="/test">test</Link>
+      </li>
     </ul>
   </div>
 )

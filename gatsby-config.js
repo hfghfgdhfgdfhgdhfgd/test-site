@@ -22,6 +22,12 @@ module.exports = {
         name: 'posts',
         path: `${__dirname}/src/pages/posts`
       }
+    }, {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/images`,
+      }
     }
     , { resolve: `@hfghfgdhfgdfhgdhfgd/gatsby-theme-minimal`, options: {
       basePath: '/events'
@@ -46,6 +52,12 @@ module.exports = {
         icon: `src/images/icon.png`, // This path is relative to the root of the site.
       },
     },
+    {
+      resolve: `gatsby-plugin-create-client-paths`,
+      options: { prefixes: [`/test/*`] },
+    },
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
     `gatsby-transformer-remark`,
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-netlify-cms`,
