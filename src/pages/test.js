@@ -31,8 +31,8 @@ export default () => {
           node {
             id
             childImageSharp {
-              fluid {
-                ...GatsbyImageSharpFluid
+              fixed {
+                ...GatsbyImageSharpFixed
               }
             }
           }
@@ -45,7 +45,7 @@ export default () => {
     <Layout>
       <div style={{height: 'auto', width: '100%'}}>
         {data.allFile.edges.map(({node}) => 
-          <Img fluid={node.childImageSharp.fluid} key={node.id}/>
+          <Img fixed={node.childImageSharp.fluid} key={node.id}/>
         )}
       </div>
     </Layout>
