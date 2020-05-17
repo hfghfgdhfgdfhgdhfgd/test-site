@@ -14,7 +14,6 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "dependencies": {
-    "@hfghfgdhfgdfhgdhfgd/gatsby-theme-minimal": "^1.0.0",
     "babel-plugin-styled-components": "^1.10.7",
     "gatsby": "^2.21.0",
     "gatsby-plugin-sass": "^2.3.0",
@@ -36,8 +35,10 @@
     "gatsby-plugin-manifest": "^2.4.3",
     "gatsby-plugin-netlify-cms": "^4.3.0",
     "gatsby-plugin-offline": "^3.2.2",
+    "gatsby-plugin-purgecss": "^5.0.0",
     "gatsby-plugin-sharp": "^2.6.3",
     "gatsby-transformer-sharp": "^2.5.2",
+    "gatsby-transformer-yaml": "^2.4.2",
     "netlify-cms-app": "^2.12.11",
     "node-fetch": "^2.6.0",
     "prettier": "2.0.5"

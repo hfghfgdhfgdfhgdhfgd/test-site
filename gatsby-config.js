@@ -28,10 +28,7 @@ module.exports = {
         name: `images`,
         path: `${__dirname}/src/images`,
       }
-    }
-    , { resolve: `@hfghfgdhfgdfhgdhfgd/gatsby-theme-minimal`, options: {
-      basePath: '/events'
-    }},
+    },
     {
       resolve: `gatsby-plugin-typography`,
       options: {
@@ -56,6 +53,19 @@ module.exports = {
       resolve: `gatsby-plugin-create-client-paths`,
       options: { prefixes: [`/test/*`] },
     },
+    {
+      resolve: require.resolve('./plugin/theme'),
+      options: {
+        header: 3,
+        footer: 3,
+        HomePage: [
+          "FAQ",
+          "Galler",
+          "Process",
+        ],
+      }
+    },
+    require.resolve('./plugin/data'),
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-remark`,

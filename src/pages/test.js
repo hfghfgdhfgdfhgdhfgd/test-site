@@ -1,10 +1,10 @@
 import React from 'react'
-import {Router} from "@reach/router"
-import {graphql, useStaticQuery, Link} from 'gatsby'
+//import {Router} from "@reach/router"
+import {graphql, useStaticQuery, /*Link*/} from 'gatsby'
 import Img from 'gatsby-image'
 import Layout from '../components/layout'
 
-const Test1 = () => <div>
+/*const Test1 = () => <div>
   1
 </div>
 const Test2 = () => <div>
@@ -20,7 +20,7 @@ const TestCustom = (data) => {
       {data.userId}
     </div>
   )
-}
+}*/
 
 
 export default () => {
