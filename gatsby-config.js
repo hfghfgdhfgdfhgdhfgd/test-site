@@ -54,7 +54,7 @@ module.exports = {
       options: { prefixes: [`/test/*`] },
     },
     {
-      resolve: require.resolve('./plugin/theme'),
+      resolve: require.resolve('./plugin1/theme'),
       options: {
         header: 3,
         footer: 3,
@@ -65,7 +65,7 @@ module.exports = {
         ],
       }
     },
-    require.resolve('./plugin/data'),
+    require.resolve('./plugin1/data'),
     {
       resolve: 'gatsby-plugin-preconnect',
       options: {
