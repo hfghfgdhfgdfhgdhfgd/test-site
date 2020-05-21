@@ -61,9 +61,6 @@ export default {
     return (
       <header className="header text-white"
               data-overlay="6"
-              style={{
-                backgroundImage: `url(${links[imgName]})`
-              }}
       >
         <div className="container text-center">
 
