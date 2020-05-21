@@ -16,6 +16,9 @@ export default () => (
       <li>
         <Link to="/test">test</Link>
       </li>
+      <li>
+        <Link to="/testTheme">test theme</Link>
+      </li>
     </ul>
   </div>
 )

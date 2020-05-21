@@ -1,0 +1,16 @@
+- type: footerData
+  footerText: 'We’re a team of experienced designers and developers. We can combine beautiful,
+  modern designs with clean, functional and high-performance code to produce stunning websites.'
+  links:
+    - nameLink: about
+      path: /about
+      id: 1
+    - nameLink: blog
+      path: /blog
+      id: 2
+    - nameLink: policy
+      path: /policy
+      id: 3
+    - nameLink: contact
+      path: /contacts
+      id: 4

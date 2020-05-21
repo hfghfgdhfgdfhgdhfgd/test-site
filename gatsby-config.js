@@ -66,11 +66,21 @@ module.exports = {
       }
     },
     require.resolve('./plugin/data'),
+    {
+      resolve: 'gatsby-plugin-preconnect',
+      options: {
+        domains: [
+          'https://fonts.googleapis.com'
+        ]
+      }
+    },
+    //``,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-remark`,
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-netlify-cms`,
-    `gatsby-plugin-offline`,
+    `gatsby-plugin-remove-serviceworker`,
+    //`gatsby-plugin-offline`,
   ],
 }
