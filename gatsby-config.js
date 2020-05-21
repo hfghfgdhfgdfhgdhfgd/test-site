@@ -80,7 +80,7 @@ module.exports = {
     `gatsby-transformer-remark`,
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-netlify-cms`,
-    `gatsby-plugin-remove-serviceworker`,
+    //`gatsby-plugin-remove-serviceworker`,
     //`gatsby-plugin-offline`,
   ],
 }
